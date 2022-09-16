@@ -1,5 +1,3 @@
-//#include <AbsMouse.h>
-
 //  ii_udraw2arduino2linux
 //  The Arduino portion of the code
 //  Modified to emulate WACOM IV by jcrm1
@@ -30,7 +28,6 @@ uint8_t stylusb0;
 bool sending = true;
 // Setup serial and send init to tablet
 void setup() {
-//  AbsMouse.init(5120, 4880);
   Serial.begin(9600);
   Wire.begin();
   Wire.beginTransmission(0x52);
